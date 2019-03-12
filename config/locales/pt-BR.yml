@@ -29,10 +29,9 @@
 # To learn more, please read the Rails Internationalization guide
 # available at http://guides.rubyonrails.org/i18n.html.
 
-en:
-  actual_locale: "English (International)"
-  hello: "Hello world"
+pt-BR:
+  actual_locale: "Português do Brasil"
   links:
-    edit: "Edit"
-    show: "Show"
-    delete: "Delete"
+    edit: "Editar"
+    show: "Mostrar"
+    delete: "Apagar"

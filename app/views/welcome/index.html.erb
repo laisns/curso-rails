@@ -1,6 +1,19 @@
+<p>
+	<%= link_to 'Português', root_path(locale: 'pt-BR') %>
+</p>
+<p>
+	<%= link_to 'English', root_path(locale: 'en') %>
+</p>
+
 <h1>Seja Bem-vindo</h1>
+<p>Idioma utilizado nessa aplicação é: <%= t('actual_locale') %></p>
+<p>Data: <%= l(Date.today) %></p> 
+<p><%= t('hello') %></p>
+
+<%= render "menu" %>
+
 <h2>Curso de Rails</h2>
-<p>A data de hoje é: <%= data_br(Date.today)%></p>
+<p>A data de hoje é: <%= Date.today %></p>
 <p>Rails de trás pra frente é: <%= "Rails".reverse%></p>
 <% x = "minha variavel x" %>
 <p>Imprimindo a variavel x: <%= x %></p>
