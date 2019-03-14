@@ -11,21 +11,21 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :description %>
-    <%= form.text_field :description %>
+    <%= form.text_field :description, class:"form-control", placeholder:"Mining Type" %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :acronym %>
-    <%= form.text_field :acronym %>
+    <%= form.text_field :acronym, class:"form-control", placeholder:"PoW" %>
   </div>
 
-  <div class="field">
-    <%= form.select("mining_type_id",MiningType.all.map { |m|[m.description, m.id]}, {include_blank: true}) %>
+  <div class="form-group">
+    <%= form.select("mining_type_id",MiningType.all.map { |m|[m.description, m.id]}, {include_blank: true}, class:"form-control") %>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit nil, class:"btn btn-primary" %>
   </div>
 <% end %>
